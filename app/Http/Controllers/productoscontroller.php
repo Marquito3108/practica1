@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class productoscontroller extends Controller
 {
     public function index(){
-        return "seccion de productos ";
+        return view("productos.show");
     }
 
     public function create(){

@@ -7,9 +7,10 @@ use Illuminate\Http\Request;
 class indexcontroller extends Controller
 {
     public function __invoke(){
-        return "Index";
+        return "oihoihohi";
     }
     
         
     
 }
+
