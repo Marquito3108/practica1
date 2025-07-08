@@ -7,12 +7,13 @@ use App\Http\Controllers\productoscontroller;
 Route::get('/', indexcontroller::class);
 
 
+
 Route::controller(productoscontroller::class)->group(function(){
     Route::get('productos',"index");
 
-    Route::get('Productos/crear',"create");
+    Route::get('productos/crear',"create");
 
-    Route::get('Productos/{product}',"show");
+    Route::get('productos/{product}',"show");
 
 
 });

@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class productoscontroller extends Controller
 {
     public function index(){
-        return view("productos.show");
+        return view("productos.index");
     }
 
     public function create(){
@@ -15,6 +15,6 @@ class productoscontroller extends Controller
     }
 
     public function show($product){
-        return "el producto es: $product";
+        return view("productos.show",['product'=> $product]);
     }
 }
