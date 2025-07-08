@@ -1,9 +1,10 @@
 <IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /PRACTICA1/public/
+
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
     </IfModule>
-
-    RewriteEngine On
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
